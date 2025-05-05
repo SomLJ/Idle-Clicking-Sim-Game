@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Recreation</title>
+    <link rel="stylesheet" href="style.css"><!-- Connects CSS to HTML -->
+</head>
+<body>
+    <section>
+        <div class="main">
+            <nav>
+  
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="dropdown-content">
+                      <a>Home</a>
+                      <a>Upgrades</a>
+                      <a>Settings</a>
+                    </div>
+                  </button>
+                </div>
+              </nav>
+            <div class="left"><!--div just defines a section -->
+                <h3>Yen: <span class="yen-currency">500</span></h3> <!-- span specifies that certain value -->
+                <img src="./assests/yen.png" alt="" srcset="" class="yen-image" onclick="incrementYen()" draggable="false"><!--srcset specifies a location of URL to external resource-->
+            </div>
+            <div class="right">
+                <div class="upgrade" onclick="buyClicker()">
+                    <div class="left-section"></div>
+                        <img src="./assests/bamboo.png" alt="" class="upgrade-img" draggable="false">
+                    <div class="mid-section"></div>
+                        <h4>Clicker</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="clicker-cost">10</span></p>
+                            <img src="./assests/yen.png" alt="" srcset="" class="yen-img" draggable="false">
+                        </div>
+                    <div class="right-section">
+                        Level <spa class="clicker-level">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p> + <span class="clicker-increase">1</span> yen <br />per click</p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyRice()">
+                    <div class="left-section"></div>
+                        <img src="./assests/rice.png" alt="" class="upgrade-img" draggable="false">
+                    <div class="mid-section"></div>
+                        <h4>Rice</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="rice-cost">100</span></p>
+                            <img src="./assests/yen.png" alt="" srcset="" class="yen-img" draggable="false">
+                        </div>
+                    <div class="right-section">
+                        Level <spa class="rice-level">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p> + <span class="rice-increase">4</span> yen <br />per second</p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyMatcha()">
+                    <div class="left-section"></div>
+                        <img src="./assests/matcha tea.png" alt="" class="upgrade-img" draggable="false">
+                    <div class="mid-section"></div>
+                        <h4>Matcha Tea</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="matcha-cost">500</span></p>
+                            <img src="./assests/yen.png" alt="" srcset="" class="yen-img" draggable="false">
+                        </div>
+                    <div class="right-section">
+                        Level <spa class="matcha-level">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p> + <span class="matcha-increase">24</span> yen <br />per second</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="statistics">
+            <div class="texts">
+                <p>YPC: <span id="ypc-text">1</span></p>
+                <p>YPS: <span id="yps-text">0</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script> <!-- connects JavaScript to HTML -->
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+
+
+
+</body>
+
+    
+
+</html>
